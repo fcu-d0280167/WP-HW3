@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>Celsiust</title>
+		<script type = "text/javascript">
+		
+		var Celsiust;//攝氏溫標
+		var Fahrenheit;//華視溫標
+		var number1;
+		
+		
+		Celsiust = window.prompt("enter Celsiust");
+		number1 = parseInt(Celsiust);
+		
+		document.write("<h1>The Celsiust is " + Celsiust + "°C trans to Fahrenheit " + tempcovert(number1)  +"°F</h1>");
+		
+		
+		function tempcovert(tempC){
+			tempC = tempC * 9;
+			tempC = tempC/5 + 32;
+			
+			return tempC;
+		}
+		
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
